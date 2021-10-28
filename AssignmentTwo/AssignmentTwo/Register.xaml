@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AssignmentTwo.Register">
+    <ContentPage.Content>
+        <StackLayout>
+
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+
+
+
+
+            </Grid>
+
+
+            <Label Text="Register Page" TextColor="Blue" Grid.Row="0" Grid.Column="1" FontSize="32"></Label>
+
+
+            <!-- Place new controls here -->
+            <Label Text="Username: " Grid.Column="0" Grid.Row="1"/>
+            <Entry x:Name="usernameText" Placeholder="Enter username"  Grid.Column="2" Grid.Row="1"></Entry>
+
+
+
+
+            <Label Text="Password: " Grid.Column="0" Grid.Row="2"/>
+            <Entry x:Name="passwordText" Placeholder="Enter password"  Grid.Column="2" Grid.Row="2"></Entry>
+
+            
+            <Label Text="First Name: " Grid.Column="0" Grid.Row="3"/>
+            <Entry x:Name="firstNameText" Placeholder="Enter first name"  Grid.Column="2" Grid.Row="2"></Entry>
+         
+            
+            <Label Text="Last Name: " Grid.Column="0" Grid.Row="4"/>
+            <Entry x:Name="lastnameText" Placeholder="Enter last name"  Grid.Column="2" Grid.Row="2"></Entry>
+
+            
+            <Label Text="Phone #: " Grid.Column="0" Grid.Row="5"/>
+            <Entry x:Name="phoneText" Placeholder="Enter Phone #"  Grid.Column="2" Grid.Row="2"></Entry>
+            
+            
+            <Label Text="Email: " Grid.Column="0" Grid.Row="6"/>
+            <Entry x:Name="emailText" Placeholder="Enter email"  Grid.Column="2" Grid.Row="2"></Entry>
+
+            <Button Text="Create Account" BackgroundColor="Blue" TextColor="White"
+                Grid.Column="1" Grid.Row="4"></Button>
+            <!--Clicked="RegisterClicked"-->
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
