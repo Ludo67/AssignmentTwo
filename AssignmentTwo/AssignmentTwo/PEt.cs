@@ -27,7 +27,6 @@ namespace AssignmentTwo
 
             if (OwnerTag == null) return "Owner tag not set";
 
-            return null;
 
             return $"Name: {Name}\nPet Type: {petType:C}\nAge: {age}\nOwner Tag: {OwnerTag}";
         }
