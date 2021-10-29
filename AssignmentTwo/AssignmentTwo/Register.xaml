@@ -60,8 +60,8 @@
             <Label Text="Email: " Grid.Column="0" Grid.Row="6"/>
             <Entry x:Name="emailText" Placeholder="Enter email"  Grid.Column="2" Grid.Row="2"></Entry>
 
-            <Button Text="Create Account" BackgroundColor="Blue" TextColor="White"
-                Grid.Column="1" Grid.Row="4"></Button>
+            <Button x:Name="register" Text="Create Account" BackgroundColor="Blue" TextColor="White"
+                Grid.Column="1" Grid.Row="4" Clicked="RegisterClicked"></Button>
             <!--Clicked="RegisterClicked"-->
 
 

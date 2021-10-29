@@ -16,5 +16,10 @@ namespace AssignmentTwo
         {
             InitializeComponent();
         }
+
+        private async void RegisterClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
+        }
     }
 }
