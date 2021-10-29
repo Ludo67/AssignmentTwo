@@ -16,5 +16,30 @@ namespace AssignmentTwo
         {
             InitializeComponent();
         }
+
+        private async void vetRegisterClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new VetRegistration());
+        }
+
+        private async void vetListClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new VetListPage());
+        }
+
+        private async void petRegisterClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PetRegistration());
+        }
+
+        private async void petDisplayClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PetDisplayPage());
+        }
+
+        private async void LogoutClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
+        }
     }
 }

@@ -31,26 +31,26 @@
 
             <Image Source="petclinicLogo.jpg" Grid.Row="1" />
 
-            <Button Text="Vet Registration" BackgroundColor="Blue" TextColor="White"
-            Grid.Row="2"></Button>
+            <Button x:Name="VetRegister" Text="Vet Registration" BackgroundColor="Blue" TextColor="White"
+            Grid.Row="2" Clicked="vetRegisterClicked"></Button>
             <!--Clicked="LoginClicked"-->
 
 
-            <Button Text="Vet List" BackgroundColor="Blue" TextColor="White"
-            Grid.Row="3"></Button>
+            <Button x:Name="VetList" Text="Vet List" BackgroundColor="Blue" TextColor="White"
+            Grid.Row="3" Clicked="vetListClicked"></Button>
 
 
-            <Button Text="Pet Registration" BackgroundColor="Blue" TextColor="White"
-            Grid.Row="4"></Button>
+            <Button x:Name="petRegisterPage" Text="Pet Registration" BackgroundColor="Blue" TextColor="White"
+            Grid.Row="4" Clicked="petRegisterClicked"></Button>
             <!--Clicked="LoginClicked"-->
 
 
-            <Button Text="Pet Display" BackgroundColor="Blue" TextColor="White"
-            Grid.Row="5"></Button>
+            <Button x:Name="PetDisplay" Text="Pet Display" BackgroundColor="Blue" TextColor="White"
+            Grid.Row="5" Clicked="petDisplayClicked"></Button>
 
 
-            <Button Text="Logout" BackgroundColor="Blue" TextColor="White"
-            Grid.Row="6"></Button>
+            <Button x:Name="Logout" Text="Logout" BackgroundColor="Blue" TextColor="White"
+            Grid.Row="6" Clicked="LogoutClicked"></Button>
             <!--Clicked="LoginClicked"-->
 
         </StackLayout>
