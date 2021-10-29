@@ -16,5 +16,10 @@ namespace AssignmentTwo
         {
             InitializeComponent();
         }
+
+        private async void addPetClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PetDisplayPage());
+        }
     }
 }
