@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AssignmentTwo.HomePage">
+    <ContentPage.Content>
+        <StackLayout>
+
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+
+
+
+
+            </Grid>
+            <Label Text="Welcome to PetClinic" TextColor="Blue" Grid.Row="0" FontSize="32" HorizontalTextAlignment="Center"></Label>
+
+            <Image Source="petclinicLogo.jpg" Grid.Row="1" />
+
+            <Button Text="Vet Registration" BackgroundColor="Blue" TextColor="White"
+            Grid.Row="2"></Button>
+            <!--Clicked="LoginClicked"-->
+
+
+            <Button Text="Vet List" BackgroundColor="Blue" TextColor="White"
+            Grid.Row="3"></Button>
+
+
+            <Button Text="Pet Registration" BackgroundColor="Blue" TextColor="White"
+            Grid.Row="4"></Button>
+            <!--Clicked="LoginClicked"-->
+
+
+            <Button Text="Pet Display" BackgroundColor="Blue" TextColor="White"
+            Grid.Row="5"></Button>
+
+
+            <Button Text="Logout" BackgroundColor="Blue" TextColor="White"
+            Grid.Row="6"></Button>
+            <!--Clicked="LoginClicked"-->
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

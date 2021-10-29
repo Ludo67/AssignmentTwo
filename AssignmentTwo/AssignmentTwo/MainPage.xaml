@@ -25,11 +25,10 @@
 
 
 
-
         </Grid>
 
 
-        <Label Text="Login" TextColor="Blue" Grid.Row="0" Grid.Column="1" FontSize="32"></Label>
+        <Label Text="Login" TextColor="Blue" Grid.Row="0" Grid.Column="1" FontSize="32" HorizontalTextAlignment="Center"></Label>
 
 
         <!-- Place new controls here -->
@@ -39,8 +38,8 @@
 
 
 
-        <Label Text="Password: " Grid.Column="0" Grid.Row="2"/>
-        <Entry x:Name="passwordText" Placeholder="Enter password"  Grid.Column="2" Grid.Row="2"></Entry>
+        <Label Text="Password: " Grid.Column="0" Grid.Row="2" />
+        <Entry x:Name="passwordText" Placeholder="Enter password"  Grid.Column="2" Grid.Row="2" IsPassword="True"></Entry>
 
 
         <Button Text="Login" BackgroundColor="Blue" TextColor="White"
