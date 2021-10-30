@@ -36,7 +36,7 @@
             <Entry x:Name="lastname" Placeholder="Enter last name" Grid.Column="2" Grid.Row="2"/>
 
             <Label Text="Phone #: " Grid.Column="0" Grid.Row="5" Margin="5, 0, 0, 0" FontSize="Medium"/>
-            <Entry x:Name="phone" Placeholder="Enter Phone #" Grid.Column="2" Grid.Row="2"/>
+            <Entry x:Name="phone" Placeholder="Enter Phone #" Grid.Column="2" Grid.Row="2" Keyboard="Numeric"/>
 
             <Label Text="Email: " Grid.Column="0" Grid.Row="6" Margin="5, 0, 0, 0" FontSize="Medium"/>
             <Entry x:Name="email" Placeholder="Enter email" Grid.Column="2" Grid.Row="2"/>
