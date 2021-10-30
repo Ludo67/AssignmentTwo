@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AssignmentTwo.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,7 @@ namespace AssignmentTwo
         {
             InitializeComponent();
         }
-
+        
         private async void VetRegisterClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new VetRegistrationPage());

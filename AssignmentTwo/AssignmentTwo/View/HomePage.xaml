@@ -19,7 +19,7 @@
                 </Grid.ColumnDefinitions>
             </Grid>
             
-            <Label Text="Welcome to PetClinic" TextColor="Blue" Grid.Row="0" FontSize="32" HorizontalTextAlignment="Center"/>
+            <Label Text="Welcome to Pet Clinic" TextColor="Blue" Grid.Row="0" FontSize="32" HorizontalTextAlignment="Center"/>
 
             <Image Source="petclinicLogo.jpg" Grid.Row="1"/>
 

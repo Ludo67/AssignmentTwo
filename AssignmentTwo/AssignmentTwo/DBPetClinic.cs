@@ -33,6 +33,11 @@ namespace AssignmentTwo
             return database.InsertAsync(pet);
         }
 
+         public Task<List<Pet>> GetPets()
+        {
+            return database.Table<Pet>().ToListAsync();
+        }
+
         public Task<int> SaveVetAsync(Vet vet)
         {
             return database.InsertAsync(vet);

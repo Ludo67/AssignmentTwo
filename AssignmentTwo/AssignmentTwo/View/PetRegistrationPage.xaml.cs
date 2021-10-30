@@ -45,7 +45,7 @@ namespace AssignmentTwo
             if (errorMessagePrompt == "ERROR! Please fill in the following inputs:\n\n")
             {
                 await DisplayAlert("Patient Added Successfully To The Database! ", "Success!", "OK");
-                await Navigation.PushAsync(new PetDisplayPage());
+                await Navigation.PushAsync(new HomePage());
                 await App.Database.RegisterPetAsync(new Pet 
                 {
                     PetID = petId.Text,

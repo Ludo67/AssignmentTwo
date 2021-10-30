@@ -3,10 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AssignmentTwo.PetDisplayPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <CollectionView x:Name="collectionView">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout>
+                                <Grid Padding="10" RowDefinitions="auto, *">
+                                    <Label Grid.Row="0" Text="Id:" TextColor="Blue" FontSize="Medium"/>
+                                    <Label Grid.Row="1" Text="PetId:" TextColor="Black" FontSize="Medium"/>
+                                    <Label Grid.Row="2" Text="Pet Name:" TextColor="Black" FontSize="Medium"/>
+                                    <Label Grid.Row="3" Text="Pet Type:" TextColor="Black" FontSize="Medium"/>
+                                    <Label Grid.Row="0" Text="{Binding ID}" TextColor="Blue" Margin="25, 0, 0, 0" FontSize="Medium"/>
+                                    <Label Grid.Row="1" Text="{Binding PetID}" TextColor="Black" Margin="50, 0, 0, 0" FontSize="Medium"/>
+                                    <Label Grid.Row="2" Text="{Binding PetName}" TextColor="Black" Margin="90, 0, 0, 0" FontSize="Medium"/>
+                                    <Label Grid.Row="3" Text="{Binding PetType}" TextColor="Black" Margin="80, 0, 0, 0" FontSize="Medium"/>
+
+                                </Grid>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
