@@ -6,7 +6,7 @@ using SQLite;
 
 namespace AssignmentTwo
 {
-    class Pet
+    public class Pet
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
