@@ -58,7 +58,7 @@ namespace AssignmentTwo
 
             if (errorMessagePrompt == "ERROR! Please fill in the following inputs:\n\n")
             {
-                await DisplayAlert("Patient Added Successfully To The Database! ", "Success!", "OK");
+                await DisplayAlert("Vet Added Successfully To The Database! ", "Success!", "OK");
                 await App.Database.SaveVetAsync(new Vet
                 {
                     VetID = vetId.Text,
