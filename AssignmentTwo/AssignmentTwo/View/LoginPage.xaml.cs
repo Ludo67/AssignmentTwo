@@ -21,21 +21,29 @@ namespace AssignmentTwo
 
         private async void LoginClicked(object sender, EventArgs e)
         {
+            bool notFound = false;
             List<User> users = await App.Database.GetUsers();
             if(users.Count == 0)
             {
                 await DisplayAlert("Error!", "Incorrect Username or Password", "OK");
             }
             foreach (User user in users)
-                if(username.Text == user.Username && password.Text == user.Password)
+            {
+                if (username.Text == user.Username && password.Text == user.Password)
                 {
+                    notFound = false;
                     await Navigation.PushAsync(new HomePage());
+                    break;
                 }
                 else
                 {
-                    await DisplayAlert("Error!", "Incorrect Username or Password", "OK");
+                    notFound = true;
                 }
-            
+            }
+            if(notFound)
+            {
+                await DisplayAlert("Error!", "Incorrect Username or Password", "OK");
+            }
         }
 
         private async void RegisterClicked(object sender, EventArgs e)
