@@ -32,21 +32,21 @@
             <Image Source="petclinicLogo.jpg" Grid.Row="1" />
 
             <Button x:Name="VetRegister" Text="Vet Registration" BackgroundColor="Blue" TextColor="White"
-            Grid.Row="2" Clicked="vetRegisterClicked"></Button>
+            Grid.Row="2" Clicked="VetRegisterClicked"></Button>
             <!--Clicked="LoginClicked"-->
 
 
             <Button x:Name="VetList" Text="Vet List" BackgroundColor="Blue" TextColor="White"
-            Grid.Row="3" Clicked="vetListClicked"></Button>
+            Grid.Row="3" Clicked="VetListClicked"></Button>
 
 
             <Button x:Name="petRegisterPage" Text="Pet Registration" BackgroundColor="Blue" TextColor="White"
-            Grid.Row="4" Clicked="petRegisterClicked"></Button>
+            Grid.Row="4" Clicked="PetRegisterClicked"></Button>
             <!--Clicked="LoginClicked"-->
 
 
             <Button x:Name="PetDisplay" Text="Pet Display" BackgroundColor="Blue" TextColor="White"
-            Grid.Row="5" Clicked="petDisplayClicked"></Button>
+            Grid.Row="5" Clicked="PetDisplayClicked"></Button>
 
 
             <Button x:Name="Logout" Text="Logout" BackgroundColor="Blue" TextColor="White"
