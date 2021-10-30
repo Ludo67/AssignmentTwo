@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AssignmentTwo.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -12,7 +13,10 @@ namespace AssignmentTwo
     {
         public LoginPage()
         {
+            LoginPageViewModel loginPageViewModel = new LoginPageViewModel();
+            loginPageViewModel.User = new User();
             InitializeComponent();
+            BindingContext = loginPageViewModel;
         }
 
         private async void LoginClicked(object sender, EventArgs e)
