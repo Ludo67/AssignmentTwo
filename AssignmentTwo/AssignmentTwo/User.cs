@@ -36,8 +36,6 @@ namespace AssignmentTwo
 
             if (Password.Length < 10) return "Password needs to be at least 10 characters";
 
-            return null;
-
             return $"First name: {firstName}\nLast name: {lastName:C}\nEmail: {email}\nPhone Number: {phoneNumber}";
         }
     } 
