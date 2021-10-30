@@ -10,14 +10,14 @@ using Xamarin.Forms.Xaml;
 namespace AssignmentTwo
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class PetRegistration : ContentPage
+    public partial class PetRegistrationPage : ContentPage
     {
-        public PetRegistration()
+        public PetRegistrationPage()
         {
             InitializeComponent();
         }
 
-        private async void addPetClicked(object sender, EventArgs e)
+        private async void AddPetClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new PetDisplayPage());
         }

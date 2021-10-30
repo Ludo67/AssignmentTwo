@@ -10,10 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace AssignmentTwo
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Register : ContentPage
+    public partial class RegisterPage : ContentPage
     {
-        
-        public Register()
+        public RegisterPage()
         {
             InitializeComponent();
         }
