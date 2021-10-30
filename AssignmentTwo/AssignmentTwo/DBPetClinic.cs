@@ -2,10 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace AssignmentTwo
 {
-    class DBPetClinic
+    public class DBPetClinic
     {
         readonly SQLiteAsyncConnection database;
 
@@ -15,6 +16,11 @@ namespace AssignmentTwo
             database.CreateTableAsync<User>().Wait();
             database.CreateTableAsync<Vet>().Wait();
             database.CreateTableAsync<Pet>().Wait();
+        }
+
+        public Task<int> SaveVetAsync(Vet vet)
+        {
+            return database.InsertAsync(vet);
         }
     }
 }
