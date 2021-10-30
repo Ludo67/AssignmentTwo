@@ -21,27 +21,27 @@
                 </Grid.ColumnDefinitions>
             </Grid>
 
-            <Label Text="Register" TextColor="Blue" Grid.Row="0" Grid.Column="1" FontSize="32" HorizontalTextAlignment="Center"/>
+            <Label Text="Register" TextColor="Black" Grid.Row="0" Grid.Column="1" FontSize="32" HorizontalTextAlignment="Center"/>
 
-            <Label Text="Username: " Grid.Column="0" Grid.Row="1"/>
+            <Label Text="Username: " Grid.Column="0" Grid.Row="1" Margin="5, 0, 0, 0" FontSize="Medium"/>
             <Entry x:Name="username" Placeholder="Enter username" Grid.Column="2" Grid.Row="1"/>
 
-            <Label Text="Password: " Grid.Column="0" Grid.Row="2"/>
+            <Label Text="Password: " Grid.Column="0" Grid.Row="2" Margin="5, 0, 0, 0" FontSize="Medium"/>
             <Entry x:Name="password" Placeholder="Enter password" Grid.Column="2" Grid.Row="2" IsPassword="True"/>
 
-            <Label Text="First Name: " Grid.Column="0" Grid.Row="3"/>
+            <Label Text="First Name: " Grid.Column="0" Grid.Row="3" Margin="5, 0, 0, 0" FontSize="Medium"/>
             <Entry x:Name="firstName" Placeholder="Enter first name" Grid.Column="2" Grid.Row="2"/>
 
-            <Label Text="Last Name: " Grid.Column="0" Grid.Row="4"/>
+            <Label Text="Last Name: " Grid.Column="0" Grid.Row="4" Margin="5, 0, 0, 0" FontSize="Medium"/>
             <Entry x:Name="lastname" Placeholder="Enter last name" Grid.Column="2" Grid.Row="2"/>
 
-            <Label Text="Phone #: " Grid.Column="0" Grid.Row="5"/>
+            <Label Text="Phone #: " Grid.Column="0" Grid.Row="5" Margin="5, 0, 0, 0" FontSize="Medium"/>
             <Entry x:Name="phone" Placeholder="Enter Phone #" Grid.Column="2" Grid.Row="2"/>
 
-            <Label Text="Email: " Grid.Column="0" Grid.Row="6"/>
+            <Label Text="Email: " Grid.Column="0" Grid.Row="6" Margin="5, 0, 0, 0" FontSize="Medium"/>
             <Entry x:Name="email" Placeholder="Enter email" Grid.Column="2" Grid.Row="2"/>
 
-            <Button x:Name="register" Text="Create Account" BackgroundColor="Blue" TextColor="White" Grid.Column="1" Grid.Row="4" Clicked="RegisterClicked"/>
+            <Button x:Name="register" Text="Create Account" BackgroundColor="SkyBlue" TextColor="White" Grid.Column="1" Grid.Row="4" Margin="15, 0, 15, 0" Clicked="RegisterClicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

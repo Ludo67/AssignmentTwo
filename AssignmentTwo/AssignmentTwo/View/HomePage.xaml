@@ -19,18 +19,19 @@
                 </Grid.ColumnDefinitions>
             </Grid>
             
-            <Label Text="Welcome to PetClinic" TextColor="Blue" Grid.Row="0" FontSize="32" HorizontalTextAlignment="Center"/>
+            <Label Text="Welcome to PetClinic" TextColor="Black" Grid.Row="0" FontSize="32" HorizontalTextAlignment="Center"/>
 
-            <Image Source="petclinicLogo.jpg" Grid.Row="1"/>
+            <Image Source="petclinicLogo.jpg" Grid.Row="1" Margin="20, 0, 20, 0"/>
 
-            <Button x:Name="VetRegister" Text="Vet Registration" BackgroundColor="Blue" TextColor="White" Grid.Row="2" Clicked="VetRegisterClicked"/>
+            <Button x:Name="VetRegister" Text="Vet Registration" BackgroundColor="SkyBlue" TextColor="White" Grid.Row="2" Margin="15, 0, 15, 0" Clicked="VetRegisterClicked"/>
 
-            <Button x:Name="VetList" Text="Vet List" BackgroundColor="Blue" TextColor="White" Grid.Row="3" Clicked="VetListClicked"/>
+            <Button x:Name="VetList" Text="Vet List" BackgroundColor="SkyBlue" TextColor="White" Grid.Row="3" Margin="15, 0, 15, 0" Clicked="VetListClicked"/>
 
-            <Button x:Name="petRegisterPage" Text="Pet Registration" BackgroundColor="Blue" TextColor="White" Grid.Row="4" Clicked="PetRegisterClicked"/>
+            <Button x:Name="petRegisterPage" Text="Pet Registration" BackgroundColor="SkyBlue" TextColor="White" Grid.Row="4" Margin="15, 0, 15, 0" Clicked="PetRegisterClicked"/>
 
-            <Button x:Name="PetDisplay" Text="Pet Display" BackgroundColor="Blue" TextColor="White" Grid.Row="5" Clicked="PetDisplayClicked"/>
-            <Button x:Name="Logout" Text="Logout" BackgroundColor="Blue" TextColor="White" Grid.Row="6" Clicked="LogoutClicked"/>
+            <Button x:Name="PetDisplay" Text="Pet Display" BackgroundColor="SkyBlue" TextColor="White" Grid.Row="5" Margin="15, 0, 15, 0" Clicked="PetDisplayClicked"/>
+            
+            <Button x:Name="Logout" Text="Logout" BackgroundColor="SkyBlue" TextColor="White" Grid.Row="6" Margin="15, 0, 15, 0" Clicked="LogoutClicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

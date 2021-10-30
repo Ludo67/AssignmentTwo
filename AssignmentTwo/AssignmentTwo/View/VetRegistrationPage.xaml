@@ -21,27 +21,27 @@
                 </Grid.ColumnDefinitions>
             </Grid>
 
-            <Label Text="Vet Registration" TextColor="Blue" Grid.Row="0" Grid.Column="1" FontSize="32" HorizontalTextAlignment="Center"/>
+            <Label Text="Vet Registration" TextColor="Black" Grid.Row="0" Grid.Column="1" FontSize="32" HorizontalTextAlignment="Center"/>
 
-            <Label Text="Vet ID: " Grid.Column="0" Grid.Row="1"/>
+            <Label Text="Vet ID: " Grid.Column="0" Grid.Row="1" Margin="5, 0, 0, 0" FontSize="Medium"/>
             <Entry x:Name="vetId" Placeholder="Enter vet ID"  Grid.Column="2" Grid.Row="1"/>
 
-            <Label Text="First Name: " Grid.Column="0" Grid.Row="3"/>
+            <Label Text="First Name: " Grid.Column="0" Grid.Row="3" Margin="5, 0, 0, 0" FontSize="Medium"/>
             <Entry x:Name="firstName" Placeholder="Enter first name"  Grid.Column="2" Grid.Row="2"/>
 
-            <Label Text="Last Name: " Grid.Column="0" Grid.Row="4"/>
+            <Label Text="Last Name: " Grid.Column="0" Grid.Row="4" Margin="5, 0, 0, 0" FontSize="Medium"/>
             <Entry x:Name="lastName" Placeholder="Enter last name"  Grid.Column="2" Grid.Row="2"/>
 
-            <Label Text="Phone #: " Grid.Column="0" Grid.Row="5"/>
+            <Label Text="Phone #: " Grid.Column="0" Grid.Row="5" Margin="5, 0, 0, 0" FontSize="Medium"/>
             <Entry x:Name="phoneNumber" Placeholder="Enter Phone #"  Grid.Column="2" Grid.Row="2"/>
 
-            <Label Text="Email: " Grid.Column="0" Grid.Row="6"/>
+            <Label Text="Email: " Grid.Column="0" Grid.Row="6" Margin="5, 0, 0, 0" FontSize="Medium"/>
             <Entry x:Name="email" Placeholder="Enter email"  Grid.Column="2" Grid.Row="2"/>
 
-            <Label Text="Specialization: " Grid.Column="0" Grid.Row="7"/>
+            <Label Text="Specialization: " Grid.Column="0" Grid.Row="7" Margin="5, 0, 0, 0" FontSize="Medium"/>
             <Entry x:Name="specialization" Placeholder="Enter specialization"  Grid.Column="2" Grid.Row="2"/>
 
-            <Button Text="Add Vet" BackgroundColor="Blue" TextColor="White" Grid.Column="1" Grid.Row="4" Clicked="AddVetClicked"/>
+            <Button Text="Add Vet" BackgroundColor="SkyBlue" TextColor="White" Grid.Column="1" Grid.Row="4" Margin="15, 0, 15, 0" Clicked="AddVetClicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
