@@ -1,12 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AssignmentTwo.ViewModel"
              x:Class="AssignmentTwo.VetListPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <CollectionView x:Name="collectionView">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout>
+                                <Grid Padding="10" RowDefinitions="auto, *">
+                                    <Label Grid.Row="0" Text="Id:" TextColor="Blue" FontSize="Medium"/>
+                                    <Label Grid.Row="1" Text="VetId:" TextColor="Black" FontSize="Medium"/>
+                                    <Label Grid.Row="2" Text="First Name:" TextColor="Black" FontSize="Medium"/>
+                                    <Label Grid.Row="3" Text="Last Name:" TextColor="Black" FontSize="Medium"/>
+                                    <Label Grid.Row="4" Text="Phone Number:" TextColor="Black" FontSize="Medium"/>
+                                    <Label Grid.Row="5" Text="Email:" TextColor="Black" FontSize="Medium"/>
+                                    <Label Grid.Row="6" Text="Specialization:" TextColor="Black" FontSize="Medium"/>
+                                    <Label Grid.Row="0" Text="{Binding ID}" TextColor="Blue" Margin="25, 0, 0, 0" FontSize="Medium"/>
+                                    <Label Grid.Row="1" Text="{Binding VetID}" TextColor="Black" Margin="50, 0, 0, 0" FontSize="Medium"/>
+                                    <Label Grid.Row="2" Text="{Binding FirstName}" TextColor="Black" Margin="95, 0, 0, 0" FontSize="Medium"/>
+                                    <Label Grid.Row="3" Text="{Binding LastName}" TextColor="Black" Margin="95, 0, 0, 0" FontSize="Medium"/>
+                                    <Label Grid.Row="4" Text="{Binding PhoneNumber}" TextColor="Black" Margin="130, 0, 0, 0" FontSize="Medium"/>
+                                    <Label Grid.Row="5" Text="{Binding Email}" TextColor="Black" Margin="55, 0, 0, 0" FontSize="Medium"/>
+                                    <Label Grid.Row="6" Text="{Binding Specialization}" TextColor="Black" Margin="120, 0, 0, 0" FontSize="Medium"/>
+                                </Grid>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

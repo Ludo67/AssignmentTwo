@@ -19,7 +19,7 @@
             </Grid.ColumnDefinitions>
         </Grid>
 
-        <Label Text="Login" TextColor="Blue" Grid.Row="0" Grid.Column="1" FontSize="32" HorizontalTextAlignment="Center"/>
+        <Label Text="Login" TextColor="Black" Grid.Row="0" Grid.Column="1" FontSize="32" HorizontalTextAlignment="Center"/>
 
         <Label Text="Username: " Grid.Column="0" Grid.Row="1"/>
         <Entry x:Name="username" Placeholder="Enter username"  Grid.Column="2" Grid.Row="1" Text="{Binding Path=User.Username}"/>
@@ -27,9 +27,9 @@
         <Label Text="Password: " Grid.Column="0" Grid.Row="2" />
         <Entry x:Name="password" Placeholder="Enter password"  Grid.Column="2" Grid.Row="2" IsPassword="True" Text="{Binding Path=User.Password}"/>
 
-        <Button x:Name="Login" Text="Login" BackgroundColor="Blue" TextColor="White" Grid.Column="1" Grid.Row="3" Clicked ="LoginClicked"/>
+        <Button x:Name="Login" Text="Login" BackgroundColor="SkyBlue" TextColor="White" Grid.Column="1" Grid.Row="3" Margin="15, 0, 15, 0" Clicked ="LoginClicked"/>
 
-        <Button x:Name="Register"  Text="Register" BackgroundColor="Blue" TextColor="White" Grid.Column="1" Grid.Row="4" Clicked ="RegisterClicked"/>
+        <Button x:Name="Register"  Text="Register" BackgroundColor="SkyBlue" TextColor="White" Grid.Column="1" Grid.Row="4" Margin="15, 0, 15, 0" Clicked ="RegisterClicked"/>
 
     </StackLayout>
 </ContentPage>

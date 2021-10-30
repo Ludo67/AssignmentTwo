@@ -17,7 +17,7 @@ namespace AssignmentTwo
                 {
                     database = new DBPetClinic
                         (Path.Combine(Environment.GetFolderPath
-                        (Environment.SpecialFolder.LocalApplicationData), "petclinics.db3"));
+                        (Environment.SpecialFolder.LocalApplicationData), "petclinic.db"));
                 }
                 return database;
             }

@@ -59,7 +59,6 @@ namespace AssignmentTwo
             if (errorMessagePrompt == "ERROR! Please fill in the following inputs:\n\n")
             {
                 await DisplayAlert("Patient Added Successfully To The Database! ", "Success!", "OK");
-                await Navigation.PushAsync(new VetListPage());
                 await App.Database.SaveVetAsync(new Vet
                 {
                     VetID = vetId.Text,
@@ -69,6 +68,7 @@ namespace AssignmentTwo
                     Email = email.Text,
                     Specialization = specialization.Text
                 });
+                await Navigation.PushAsync(new HomePage());
             }
         }
     }
