@@ -21,34 +21,34 @@ namespace AssignmentTwo
         {
             string errorMessagePrompt = "ERROR! Please fill in the following inputs:\n\n";
 
-            if (usernameText.Text == null || usernameText.Text == "")
+            if (username.Text == null || username.Text == "")
             {
                 errorMessagePrompt += "- Enter a valid username -\n";
             }
-            if (passwordText.Text == null || passwordText.Text == "")
+            if (password.Text == null || password.Text == "")
             {
                 errorMessagePrompt += "- Enter a valid password -\n";
             }
-            if (passwordText.Text != null && passwordText.Text != "")
+            if (password.Text != null && password.Text != "")
             {
-                if (passwordText.Text.Length <= 10)
+                if (password.Text.Length <= 10)
                 {
                     errorMessagePrompt += "- Enter a valid password: Need more than 10 characters -\n";
                 }
             }
-            if (firstNameText.Text == null || firstNameText.Text == "")
+            if (firstName.Text == null || firstName.Text == "")
             {
                 errorMessagePrompt += "- Enter a valid first name -\n";
             }
-            if (lastnameText.Text == null || lastnameText.Text == "")
+            if (lastname.Text == null || lastname.Text == "")
             {
                 errorMessagePrompt += "- Enter a valid last name -\n";
             }
-            if (phoneText.Text == null || phoneText.Text == "")
+            if (phone.Text == null || phone.Text == "")
             {
                 errorMessagePrompt += "- Enter a valid phone number -\n";
             }
-            if (emailText.Text == null || emailText.Text == "")
+            if (email.Text == null || email.Text == "")
             {
                 errorMessagePrompt += "- Enter a valid email -";
             }
