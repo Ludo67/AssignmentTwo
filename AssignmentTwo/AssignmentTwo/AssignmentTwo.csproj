@@ -17,38 +17,42 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="LoginPage.xaml.cs">
+    <Compile Update="View\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="PetRegistrationPage.xaml.cs">
+    <Compile Update="View\PetRegistrationPage.xaml.cs">
       <DependentUpon>PetRegistrationPage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="RegisterPage.xaml.cs">
+    <Compile Update="View\RegisterPage.xaml.cs">
       <DependentUpon>RegisterPage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="VetRegistrationPage.xaml.cs">
+    <Compile Update="View\VetRegistrationPage.xaml.cs">
       <DependentUpon>VetRegistrationPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="HomePage.xaml">
+    <EmbeddedResource Update="View\HomePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="PetDisplayPage.xaml">
+    <EmbeddedResource Update="View\PetDisplayPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="PetRegistrationPage.xaml">
+    <EmbeddedResource Update="View\PetRegistrationPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="RegisterPage.xaml">
+    <EmbeddedResource Update="View\RegisterPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="VetListPage.xaml">
+    <EmbeddedResource Update="View\VetListPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="VetRegistrationPage.xaml">
+    <EmbeddedResource Update="View\VetRegistrationPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ViewModel\" />
   </ItemGroup>
 </Project>
