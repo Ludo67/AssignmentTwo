@@ -17,9 +17,43 @@ namespace AssignmentTwo
             InitializeComponent();
         }
 
-        private async void AddPetClicked(object sender, EventArgs e)
+        async void AddPetClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new PetDisplayPage());
+
+            string errorMessagePrompt = "ERROR! Please fill in the following inputs:\n\n";
+
+            if (petId.Text == null || petId.Text == "")
+            {
+                errorMessagePrompt += "- Enter a valid petId\n";
+            }
+
+            if (petName.Text == null || petName.Text == "")
+            {
+                errorMessagePrompt += "- Enter a valid pet name\n";
+            }
+
+            if (type.Text == null || type.Text == "")
+            {
+                errorMessagePrompt += "- Enter a valid pet type\n";
+            }
+
+            if (errorMessagePrompt != "ERROR! Please fill in the following inputs:\n\n")
+            {
+                await DisplayAlert("Alert", errorMessagePrompt, "OK");
+            }
+
+            if (errorMessagePrompt == "ERROR! Please fill in the following inputs:\n\n")
+            {
+                await DisplayAlert("Patient Added Successfully To The Database! ", "Success!", "OK");
+                await Navigation.PushAsync(new PetDisplayPage());
+                await App.Database.RegisterPetAsync(new Pet 
+                {
+                    PetID = petId.Text,
+                    PetName = petName.Text,
+                    PetType = type.Text
+                });
+            }
+            
         }
     }
 }

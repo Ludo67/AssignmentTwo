@@ -28,6 +28,11 @@ namespace AssignmentTwo
             return database.InsertAsync(user);
         }
 
+        public Task<int> RegisterPetAsync(Pet pet)
+        {
+            return database.InsertAsync(pet);
+        }
+
         public Task<int> SaveVetAsync(Vet vet)
         {
             return database.InsertAsync(vet);

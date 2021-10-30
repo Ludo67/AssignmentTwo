@@ -60,8 +60,18 @@ namespace AssignmentTwo
 
             if (errorMessagePrompt == "ERROR! Please fill in the following inputs:\n\n"){
                 await DisplayAlert("Patient Added Successfully To The Database! ", "Success!", "OK");
+                await App.Database.RegisterUserAsync(new User
+                {
+                    Username = username.Text,
+                    Password = password.Text,
+                    FirstName = firstName.Text,
+                    LastName = lastname.Text,
+                    PhoneNumber = phone.Text,
+                    Email = email.Text
+                });
                 await Navigation.PushAsync(new LoginPage());
             }
+
         }
     }
 }

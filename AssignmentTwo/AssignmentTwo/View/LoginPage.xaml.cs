@@ -17,7 +17,17 @@ namespace AssignmentTwo
 
         private async void LoginClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new HomePage());
+            List<User> users = await App.Database.GetUsers();
+            foreach (User user in users)
+                if(username.Text == user.Username && password.Text == user.Password)
+                {
+                    await Navigation.PushAsync(new HomePage());
+                }
+                else
+                {
+                    await DisplayAlert("Error!", "Incorrect Username or Password", "OK");
+                }
+            
         }
 
         private async void RegisterClicked(object sender, EventArgs e)
