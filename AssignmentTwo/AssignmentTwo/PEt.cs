@@ -12,23 +12,20 @@ namespace AssignmentTwo
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
         public string Name { get; set; }
-        public string petType { get; set; }
-        public int age { get; set; }
-        public int OwnerTag { get; set; }
+        public string PetType { get; set; }
+        public int? Age { get; set; }
+        public int? OwnerTag { get; set; }
 
 
         public string IsValid()
         {
-            if (Name == null) return "Name not set";
-
-            if (petType == null) return "Pet Type not set";
-
-            if (age == null) return "Age not set";
-
-            if (OwnerTag == null) return "Owner tag not set";
-
-
-            return $"Name: {Name}\nPet Type: {petType:C}\nAge: {age}\nOwner Tag: {OwnerTag}";
+            return Name == null
+                ? "Name not set"
+                : PetType == null
+                ? "Pet Type not set"
+                : Age == null
+                ? "Age not set"
+                : OwnerTag == null ? "Owner tag not set" : $"Name: {Name}\nPet Type: {PetType:C}\nAge: {Age}\nOwner Tag: {OwnerTag}";
         }
     }
 }
