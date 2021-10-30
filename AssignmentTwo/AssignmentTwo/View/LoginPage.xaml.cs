@@ -22,6 +22,10 @@ namespace AssignmentTwo
         private async void LoginClicked(object sender, EventArgs e)
         {
             List<User> users = await App.Database.GetUsers();
+            if(users.Count == 0)
+            {
+                await DisplayAlert("Error!", "Incorrect Username or Password", "OK");
+            }
             foreach (User user in users)
                 if(username.Text == user.Username && password.Text == user.Password)
                 {

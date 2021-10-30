@@ -26,7 +26,7 @@ namespace AssignmentTwo.ViewModel
             }
         }
 
-        string username = "Test";
+        string username = "";
         public string Username
         {
             get { return username; }
