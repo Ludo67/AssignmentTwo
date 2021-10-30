@@ -18,25 +18,5 @@ namespace AssignmentTwo
         public string Password { get; set; }
 
         public int? OwnerTag { get; set; }
-
-
-        public string IsValid()
-        {
-            return FirstName == null
-                ? "First name not set"
-                : LastName == null
-                ? "Last name not set"
-                : PhoneNumber == null
-                ? "Phone # not set"
-                : Email == null
-                ? "email not set"
-                : OwnerTag == null
-                ? "Tag not set"
-                : Username == null
-                ? "Username not set"
-                : Password.Length < 10
-                ? "Password needs to be at least 10 characters"
-                : $"First name: {FirstName}\nLast name: {LastName:C}\nEmail: {Email}\nPhone Number: {PhoneNumber}";
-        }
     } 
 }
