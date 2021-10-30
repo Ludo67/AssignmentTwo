@@ -19,7 +19,7 @@ namespace AssignmentTwo
 
         private async void AddPetClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new PetDisplayPage());
+            await Navigation.PushAsync(new HomePage());
         }
     }
 }

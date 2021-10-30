@@ -22,5 +22,9 @@ namespace AssignmentTwo
         {
             return database.InsertAsync(vet);
         }
+        public Task<List<Vet>> GetVetsAsync()
+        {
+            return database.Table<Vet>().ToListAsync();
+        }
     }
 }

@@ -15,6 +15,18 @@ namespace AssignmentTwo
         public VetListPage()
         {
             InitializeComponent();
+            BindingContext = this;
+        }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            var vets = await App.Database.GetVetsAsync();
+            if(vets.Count() == 0)
+            {
+                await DisplayAlert("Database is empty!", "There are no vets recorded in the database yet.", "OK");
+            }
+            collectionView.ItemsSource = vets;
         }
     }
 }

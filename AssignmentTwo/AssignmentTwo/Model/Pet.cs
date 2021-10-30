@@ -12,7 +12,7 @@ namespace AssignmentTwo
         public int ID { get; set; }
         public string Name { get; set; }
         public string PetType { get; set; }
-        public int? Age { get; set; }
-        public int? OwnerTag { get; set; }
+        public int Age { get; set; }
+        public int OwnerTag { get; set; }
     }
 }
