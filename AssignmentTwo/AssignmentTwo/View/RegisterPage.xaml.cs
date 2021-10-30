@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -49,6 +50,11 @@ namespace AssignmentTwo
                 errorMessagePrompt += "- Enter a valid phone number -\n";
             }
             if (email.Text == null || email.Text == "")
+            {
+                errorMessagePrompt += "- Enter a valid email -";
+            }
+
+            if (email.Text != null && !Regex.IsMatch(email.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
             {
                 errorMessagePrompt += "- Enter a valid email -";
             }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -49,6 +50,11 @@ namespace AssignmentTwo
             if (specialization.Text == null || specialization.Text == "")
             {
                 errorMessagePrompt += "- Enter a valid specialization\n";
+            }
+
+            if (email.Text != null && !Regex.IsMatch(email.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            {
+                errorMessagePrompt += "- Enter a valid email -";
             }
 
             if (errorMessagePrompt != "ERROR! Please fill in the following inputs:\n\n")
